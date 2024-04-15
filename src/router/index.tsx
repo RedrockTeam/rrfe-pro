@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { set } from 'lodash-es';
 import { ComponentType, lazy, Suspense } from 'react';
 import { RouteObject } from 'react-router-dom';
@@ -76,4 +77,5 @@ function generateRouteConfig(): RouteObject[] {
   ];
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default generateRouteConfig();

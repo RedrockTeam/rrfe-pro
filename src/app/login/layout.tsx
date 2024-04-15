@@ -1,6 +1,9 @@
+import { ReactElement } from 'react';
 import { Outlet } from 'react-router-dom';
-
-export default function layout({ children }) {
+interface Iprops {
+  children: ReactElement;
+}
+export default function layout({ children }: Iprops) {
   return (
     <div>
       123{children}
