@@ -1,5 +1,6 @@
 import './index.css';
 
+import { StyleProvider } from '@ant-design/cssinjs';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
@@ -11,8 +12,10 @@ const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <StyleProvider hashPriority="high">
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </StyleProvider>
   </React.StrictMode>
 );

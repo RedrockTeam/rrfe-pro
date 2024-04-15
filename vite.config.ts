@@ -18,13 +18,10 @@ export default defineConfig({
       '@/': `${pathSrc}/`,
     },
   },
-  plugins: [
-    react(),
-    
-  ],
+  plugins: [react()],
   css: {
     postcss: {
-      plugins: [autoprefixer({}),tailwindcss],
+      plugins: [autoprefixer({}), tailwindcss],
     },
   },
   server: {
